@@ -1,0 +1,58 @@
+2017-08-22 16:41:37,437 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@21a06946: startup date [Tue Aug 22 16:41:37 CST 2017]; root of context hierarchy
+2017-08-22 16:41:37,505 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-08-22 16:41:38,302 INFO [com.mchange.v2.log.MLog] - MLog clients using log4j logging.
+2017-08-22 16:41:38,455 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2017-08-22 16:41:39,121 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeozl9q2ixul5zz4mqu|4da4253, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeozl9q2ixul5zz4mqu|4da4253, idleConnectionTestPeriod -> 0, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://localhost:3306/crm, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 1, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2017-08-22 16:43:33,259 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@21a06946: startup date [Tue Aug 22 16:43:33 CST 2017]; root of context hierarchy
+2017-08-22 16:43:33,321 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-08-22 16:43:33,958 INFO [com.mchange.v2.log.MLog] - MLog clients using log4j logging.
+2017-08-22 16:43:34,105 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2017-08-22 16:43:34,718 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeozl9q2j0btp1p5is68|4da4253, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeozl9q2j0btp1p5is68|4da4253, idleConnectionTestPeriod -> 0, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://localhost:3306/crm?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 1, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2017-08-22 16:44:03,984 WARN [com.mchange.v2.resourcepool.BasicResourcePool] - com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@36a6fb41 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLNonTransientConnectionException: Cannot load connection class because of underlying exception: com.mysql.cj.core.exceptions.WrongArgumentException: Malformed database URL, failed to parse the connection string near ';characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC'.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:489)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:72)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:124)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:224)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: com.mysql.cj.core.exceptions.UnableToConnectException: Cannot load connection class because of underlying exception: com.mysql.cj.core.exceptions.WrongArgumentException: Malformed database URL, failed to parse the connection string near ';characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC'.
+	at sun.reflect.GeneratedConstructorAccessor6.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	... 9 more
+Caused by: com.mysql.cj.core.exceptions.WrongArgumentException: Malformed database URL, failed to parse the connection string near ';characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC'.
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.conf.url.ConnectionUrlParser.processKeyValuePattern(ConnectionUrlParser.java:511)
+	at com.mysql.cj.core.conf.url.ConnectionUrlParser.parseQuerySection(ConnectionUrlParser.java:491)
+	at com.mysql.cj.core.conf.url.ConnectionUrlParser.getProperties(ConnectionUrlParser.java:616)
+	at com.mysql.cj.core.conf.url.ConnectionUrl.collectProperties(ConnectionUrl.java:307)
+	at com.mysql.cj.core.conf.url.ConnectionUrl.<init>(ConnectionUrl.java:292)
+	at com.mysql.cj.core.conf.url.SingleConnectionUrl.<init>(SingleConnectionUrl.java:38)
+	at com.mysql.cj.core.conf.url.ConnectionUrl.getConnectionUrlInstance(ConnectionUrl.java:202)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:194)
+	... 8 more
+2017-08-22 16:44:51,633 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@21a06946: startup date [Tue Aug 22 16:44:51 CST 2017]; root of context hierarchy
+2017-08-22 16:44:51,745 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-08-22 16:44:52,546 INFO [com.mchange.v2.log.MLog] - MLog clients using log4j logging.
+2017-08-22 16:44:52,719 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2017-08-22 16:44:53,268 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeozl9q2j20gy67hf5s|4da4253, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeozl9q2j20gy67hf5s|4da4253, idleConnectionTestPeriod -> 0, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://localhost:3306/crm?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 1, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2017-08-22 16:44:53,731 DEBUG [com.zhiyou100.sspringm.vo.mapping.EmpNS.doCreate] - ==>  Preparing: INSERT INTO emp(empno, deptno, ename, job, sal, comm, mgr, hiredate, create_time) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2017-08-22 16:44:53,814 DEBUG [com.zhiyou100.sspringm.vo.mapping.EmpNS.doCreate] - ==> Parameters: 2374(Integer), 63(Integer), 小刚2374(String), 程序员(String), 15314.0(Double), 28266.0(Double), 2565(Integer), 2016-08-06 22:56:05.545(Timestamp), 2016-08-06 22:56:05.545(Timestamp)
+2017-08-22 16:44:53,828 DEBUG [com.zhiyou100.sspringm.vo.mapping.EmpNS.doCreate] - <==    Updates: 1
+2017-08-22 16:44:53,832 INFO [com.zhiyou100.sspringm.test.EmpServiceImplTest] - true
